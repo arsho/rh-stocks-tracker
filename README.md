@@ -30,11 +30,25 @@ this extension adds a panel that shows:
         - Red only below 0
     - **Export PNG** of the chart
 
-## Data storage
+## Data storage and privacy
 
 Snapshots are stored locally using Chrome storage:
 - Stored only when you click **Save snapshot**
-- Clearing browser extension storage removes history
+- It parses only the publicly displayed holdings data on the Investing page.
+
+RH Stocks Tracker:
+- Does not send any data to any server
+- Does not use analytics
+- Does not collect personal information
+- Does not track you across sites
+- Stores data only in your browser using chrome.storage.local
+- Saves a history row only when you click “Save snapshot”
+
+To remove all stored data:
+- Click “Clear history” in the panel, OR
+- Remove the extension, OR
+- Clear extension storage via Chrome extension settings
+
 
 ## Install (local)
 
@@ -61,3 +75,9 @@ Then open:
 - The extension reads on-screen values from the holdings table.
 - If the page is still rendering, equity may briefly show “not parsed yet”; scrolling slightly and waiting usually resolves it.
 - This project is not affiliated with Robinhood.
+
+### Trademark disclaimer
+
+Robinhood® is a registered trademark of Robinhood Markets, Inc.
+This extension is not affiliated with, endorsed by, or sponsored by Robinhood Markets, Inc.
+The word “Robinhood” is used only to describe compatibility with the Robinhood Investing page.
