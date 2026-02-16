@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "RH Stocks Tracker",
+  "version": "1.0.0",
+  "homepage_url": "https://github.com/arsho/rh-tracker",
+  "description": "Adds a small panel to Robinhood Investing to show profit/loss and total equity. You can save snapshots and export a CSV.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://robinhood.com/account/investing"],
+  "content_scripts": [
+    {
+      "matches": ["https://robinhood.com/account/investing"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  }
+}

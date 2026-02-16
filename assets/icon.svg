@@ -1,0 +1,50 @@
+<!-- icon.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Stock net trend tracker icon">
+    <!-- Background -->
+    <rect x="16" y="16" width="224" height="224" rx="48" fill="#0B1220"/>
+
+    <!-- Subtle grid -->
+    <g opacity="0.16" stroke="#FFFFFF" stroke-width="2">
+        <path d="M48 88H208" />
+        <path d="M48 128H208" />
+        <path d="M48 168H208" />
+        <path d="M88 48V208" />
+        <path d="M128 48V208" />
+        <path d="M168 48V208" />
+    </g>
+
+    <!-- Axes -->
+    <g stroke="#C7D2FE" stroke-width="6" stroke-linecap="round" opacity="0.85">
+        <path d="M56 196H206" />
+        <path d="M56 196V56" />
+    </g>
+
+    <!-- Trend line -->
+    <path
+            d="M64 172 L96 156 L120 164 L148 124 L178 136 L206 88"
+            fill="none"
+            stroke="#FFFFFF"
+            stroke-width="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+    />
+
+    <!-- Points -->
+    <g>
+        <circle cx="64" cy="172" r="8" fill="#22C55E"/>
+        <circle cx="96" cy="156" r="8" fill="#22C55E"/>
+        <circle cx="120" cy="164" r="8" fill="#22C55E"/>
+        <circle cx="148" cy="124" r="8" fill="#22C55E"/>
+        <circle cx="178" cy="136" r="8" fill="#22C55E"/>
+        <circle cx="206" cy="88" r="9" fill="#22C55E"/>
+    </g>
+
+    <!-- Net badge -->
+    <g transform="translate(148 42)">
+        <rect x="0" y="0" width="72" height="44" rx="16" fill="#111827" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+        <!-- plus -->
+        <path d="M18 22H32M25 15V29" stroke="#22C55E" stroke-width="5" stroke-linecap="round"/>
+        <!-- minus -->
+        <path d="M42 22H58" stroke="#EF4444" stroke-width="5" stroke-linecap="round"/>
+    </g>
+</svg>
