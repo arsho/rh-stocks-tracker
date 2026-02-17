@@ -1,6 +1,7 @@
 # RH Stocks Tracker
 
-A lightweight Chrome extension that adds a small panel on Robinhood’s **Investing** page to summarize **Profit**, **Loss**, **Net**, and **Total Equity**. You can **save snapshots locally** and view a **trend chart** of your net return over time.
+A lightweight Chrome extension that adds a small panel on Robinhood’s **Investing** page to summarize **Profit**, **Loss**, **Net**, and **Total Equity**. 
+You can **save snapshots locally** and view a **trend chart** of your net return over time.
 
 ## What it does
 
