@@ -1,84 +1,92 @@
 # RH Stocks Tracker
 
-A lightweight Chrome extension that adds a small panel on Robinhood’s **Investing** page to summarize **Profit**, **Loss**, **Net**, and **Total Equity**. 
-You can **save snapshots locally** and view a **trend chart** of your net return over time.
+A lightweight Chrome extension that adds a small summary panel on the Robinhood Account Investing page: https://robinhood.com/account/investing
 
-## What it does
+It reads visible stock table data and calculates:
 
-Opening Robinhood account investing page [https://robinhood.com/account/investing](https://robinhood.com/account/investing), 
-this extension adds a panel that shows:
+- Profit
+- Loss
+- Net
+- Total Equity
+- Total number of stocks
 
-- Profit (sum of positive “Total return”)
-- Loss (sum of negative “Total return”)
-- Net (Profit + Loss)
-- Total Equity (sum of equity across holdings)
-- Total stocks (count of parsed holdings)
-- Trend chart of net value over time
+You can save snapshots locally and view a trend chart of your net return over time.
 
-![alt demo](assets/demo.png)
+![Demo Screenshot](assets/demo/demo.png)
+
+![Chart Screenshot](assets/demo/chart.png)
 
 ## Features
 
-- **Always-on summary panel** (no clicks required to see totals)
-- **Save snapshot** button stores a row in your browser (Chrome local storage)
-- **History table** with **Delete** per row
-- **Export CSV** (2 decimal places everywhere)
-- **Trend chart overlay** (Net over time)
-    - Works with **0 / 1 / many** snapshots
-    - Uses **dynamic x-axis labels** to avoid overlap
-    - Uses a **0 baseline** and colors fills:
-        - Green only above 0
-        - Red only below 0
-    - **Export PNG** of the chart
+- Always-on summary panel 
+- Save Snapshot at will (stores data locally in Chrome storage)
+- History table of snapshots
+- Export CSV (history download)
+- Trend chart (Net over time)
+- Export PNG of the chart
 
-## Data storage and privacy
+---
 
-Snapshots are stored locally using Chrome storage:
-- Stored only when you click **Save snapshot**
-- It parses only the publicly displayed holdings data on the Investing page.
+## Installation
+
+Install from the Chrome Web Store:
+
+https://chromewebstore.google.com/detail/rh-stocks-tracker/fgmbdlbfokjdaceljikidnpadofliljf
+
+
+## How to Use
+
+1. After installing the extension, open the Robinhood Account Investing page: https://robinhood.com/account/investing
+2. The panel appears automatically and updates in real time.
+3. Click “Save snapshot” to store current totals locally.
+4. Click “Trend chart” to view net return over time.
+5. Use “Export CSV” to download history.
+6. Use “Export PNG” inside the chart to save an image.
+
+If the panel does not appear, please try refreshing the page.
+
+---
+
+## Data Storage and Privacy
+
+Snapshots are stored locally using Chrome storage.
+
+- Data is saved only when you click “Save snapshot”
+- Only visible stock table data from the Investing page is parsed
+- No personal identifiers are collected
 
 RH Stocks Tracker:
-- Does not send any data to any server
+
+- Does not send data to any server
 - Does not use analytics
 - Does not collect personal information
-- Does not track you across sites
-- Stores data only in your browser using chrome.storage.local
-- Saves a history row only when you click “Save snapshot”
+- Does not track browsing activity
+- Does not access login credentials
 
-To remove all stored data:
-- Click “Clear history” in the panel, OR
-- Remove the extension, OR
-- Clear extension storage via Chrome extension settings
+To remove stored data:
+
+- Click “Clear history” in the panel
+- Remove the extension
+- Or clear extension storage via Chrome settings
+
+The full privacy policy is available at:
+
+https://arshovon.com/rh-stocks-tracker/privacy-policy
+
+---
 
 
-## Install (local)
+## Support
 
-1. Download/clone this repository.
-2. Open Chrome: `chrome://extensions`
-3. Enable **Developer mode**
-4. Click **Load unpacked**
-5. Select the folder that contains `manifest.json`
+If you have a feature suggestion, improvement idea, or discover a bug, please open an issue on GitHub: https://github.com/arsho/rh-stocks-tracker/issues
 
-Then open:
-- https://robinhood.com/account/investing
+Clear steps to reproduce a problem and screenshots (if applicable) are appreciated.
 
-## How to use
+---
 
-1. Open Robinhood Investing page.
-2. The panel appears and updates automatically.
-3. Click **Save snapshot** to store the current totals.
-4. Click **Trend chart** to view net return over time.
-5. Click **Export CSV** to download history.
-6. Click **Export PNG** inside the chart to save an image.
 
-## Notes
-
-- The extension reads on-screen values from the holdings table.
-- If the page is still rendering, equity may briefly show “not parsed yet”; scrolling slightly and waiting usually resolves it.
-- This project is not affiliated with Robinhood.
-
-### Trademark disclaimer
+## Trademark Disclaimer
 
 Robinhood® is a registered trademark of Robinhood Markets, Inc.
-This extension is not affiliated with, endorsed by, or sponsored by Robinhood Markets, Inc.
-The word “Robinhood” is used only to describe compatibility with the Robinhood Investing page.
+
+This extension is not affiliated with, endorsed by, or sponsored by Robinhood Markets, Inc. The term “Robinhood” is used solely to describe compatibility with the Robinhood Investing page.
