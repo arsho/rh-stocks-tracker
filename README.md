@@ -12,9 +12,13 @@ It reads visible stock table data and calculates:
 
 You can save snapshots locally and view a trend chart of your net return over time.
 
+## Demo
+
 ![Demo Screenshot](assets/demo/demo.png)
 
 ![Chart Screenshot](assets/demo/chart.png)
+
+- Video demonstration: https://youtu.be/-X7-qvpMuSs
 
 ## Features
 
